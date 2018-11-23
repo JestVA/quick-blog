@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100%;
+}
+
+.welcome {
+  background-image: radial-gradient(ellipse, yellow, orange);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+
+  h1 {
+    color: $color-white;
+    font-size: 2rem;
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+    font-size: 1.05rem;
+  }
+}
+
