@@ -1,1 +1,9 @@
-h1  This is a test! 
+extend _component/layout/layout
+block config
+    -
+        var title = "Welcome to Quick Blog"
+        var description = "This quick blog is made with performance in mind and achieving perfect Google Page Insights score."
+
+block content
+    h1=title
+    p=description
