@@ -11,7 +11,7 @@ body {
 
 .welcome {
   background-image: radial-gradient(ellipse, $color-normal, $color-dark);
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -21,7 +21,8 @@ body {
   h1 {
     color: $color-white;
     font-weight: bold;
-    // font-size: 2rem;
+    font-size: 4rem;
+    margin: 1rem;
   }
 
   .welcome__description {
