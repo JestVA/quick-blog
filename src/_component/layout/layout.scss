@@ -10,7 +10,7 @@ body {
 }
 
 .welcome {
-  background-image: radial-gradient(ellipse, yellow, orange);
+  background-image: radial-gradient(ellipse, $color-normal, $color-dark);
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -37,17 +37,21 @@ body {
     padding: 0.3rem 0.6rem;
     border-radius: 0.3rem;
     margin: 1rem;
-    border: 0.1rem solid $color-buttercup;
+    border: 0.1rem solid $color-white;
     position: relative;
-    background-color: $color-buttercup;
-    padding-right: 1.5rem; 
+    background-color: $color-dark;
+    padding-right: 1.3rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
-      border: 0.1rem solid $color-white;
+      border: 0.1rem solid $color-normal;
     }
+  }
+  .continue-arrow {
+    margin: 0 0.2rem;
     &:after {
       position: absolute;
-      right: 0.5rem;
-      top: 1.2rem;
       content: '';
       display: block;
       width: 0px;
