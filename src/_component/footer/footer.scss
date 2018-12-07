@@ -16,6 +16,11 @@ footer {
 .footer__list {
   display: flex;
   justify-content: space-around;
+
+  li {
+    list-style-type: none;
+  }
+
 }
 
 .footer__link {
@@ -24,3 +29,4 @@ footer {
   color: $color-white;
   text-decoration: none;
 }
+
