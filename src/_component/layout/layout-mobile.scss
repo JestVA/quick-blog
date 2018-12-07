@@ -75,6 +75,15 @@ p {
   line-height: 1.5;
 }
 
+ol {
+  padding: 1rem 2rem;
+
+  li {
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .top {
   text-align: right;
   display: block;
