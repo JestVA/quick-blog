@@ -2,6 +2,9 @@
   // extra files for the desktop version
   .menu__list {
     flex-grow: 0;
+    li {
+      list-style-type: disc;
+    }
   }
 
 }
