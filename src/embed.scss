@@ -1,0 +1,72 @@
+@import '_component/layout/reset';
+@import '_component/config/color';
+
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans'; 
+}
+
+// Fluid typography
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+.welcome {
+  background-image: radial-gradient(ellipse, $color-normal, $color-dark);
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: $color-white;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 1rem;
+  }
+
+  .welcome__description {
+    line-height: 1.5;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+    // text-align: justify;
+    padding: 2rem;
+  }
+
+  a.scroll-down {
+    color: $color-white;
+    text-decoration: none;
+    font-size: 1rem;
+    
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    margin: 1rem;
+    border: 0.1rem solid $color-white;
+    position: relative;
+    background-color: $color-dark;
+    padding-right: 1.3rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      border: 0.1rem solid $color-normal;
+    }
+  }
+  .continue-arrow {
+    margin: 0 0.2rem;
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 0px;
+      height: 0px;
+      border-top: 0.5rem solid $color-white;
+      // border-bottom: 40px solid green;
+      border-left: 0.5rem solid transparent;
+      border-right: 0.5rem solid transparent;
+    }
+  }
+}
